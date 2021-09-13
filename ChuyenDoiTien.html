@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/ChuyenDoiTien.JS"method ="get"align="center">
+    <table width="60%">
+        <tr>
+            <th width="20%">
+                Amount
+            </th>
+            <th>
+                Form Currency
+            </th>
+            <th>
+                To Currency
+            </th>
+        </tr>
+        <tr>
+            <td><input type="text" id="money" size="25" style="border-left-width: 2px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-right: 2px;
+                padding-left: 2px;"></td>
+            <td><select style="
+                width: 110px">
+                <option value="VietNam">VietNam</option>
+            </select></td>
+            <td><select style="
+                width: 110px">
+                <option value="USD">USD</option>
+            </select></td>
+            <td><input type="button" value="Convert" onclick="ChuyenDoiTien()" style="background-color: blueviolet;color: white;"></td>
+        </tr>
+        <tr style="color: blue;">
+            <td>Result</td>
+            <td><div id="ketqua"> </div></td>
+        </tr>
+    </table>
+    <script src="ChuyenDoiTien.JS"></script>
+</form>
+</body>
+</html>
